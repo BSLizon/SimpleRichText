@@ -36,14 +36,14 @@ namespace SimpleRichText
         string orgStr = "";
         int index = 0;//遍历指针
 
-        public List<Token> Parse(string str)
+        public List<Token> Tokenize(string str)
         {
             orgStr = str;
-            parse();
+            tokenize();
             return TokenList;
         }
 
-        void parse()
+        void tokenize()
         {
             if(orgStr == null || orgStr.Length <= 0)
             {

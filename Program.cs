@@ -9,7 +9,7 @@ namespace ConsoleApplication
     {
         public static void Main()
         {
-            List<Token> ls = new Parser().Parse("$$<asdf$<中$>as>df国<");
+            List<Token> ls = new Parser().Tokenize("$$<asdf$<中$>as>df国>");
 
             foreach( var item in ls)
             {
