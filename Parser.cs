@@ -28,9 +28,9 @@ namespace SimpleRichText
 
     public class Parser
     {
-    public const char MK_START = '<';
-    public const char MK_END = '>';
-    public const char MK_ESC = '$';
+        public const char MK_START = '<';
+        public const char MK_END = '>';
+        public const char MK_ESC = '$';
 
         List<Token> TokenList = new List<Token>();
         string orgStr = "";
